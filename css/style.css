@@ -1,0 +1,192 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,600italic,900|Roboto:400,300,700,900);
+
+body{
+	font: 400 18px/1.33 'Raleway', sans-serif;
+	color: #303030;
+	background-color: #eeeeee;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in-out, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 1240px;
+}
+.ba-header {
+	font: 18px/1.5 'Roboto', sans-serif;
+	color: #303030;
+	padding-top: 25px;
+	margin-bottom: 100px;
+}
+.ba-logo {
+	font-size: 48px;
+	font-weight: 900;
+	margin: 0;
+}
+.ba-logo a {
+	text-decoration: none;
+	color: #303030;
+}
+.ba-logo a:hover {
+	color: #e10011;
+}
+.ba-menu {
+	margin: 9px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+.ba-menu li {
+	float: left;
+	margin-left: 50px;
+}
+.ba-menu a {
+	color: #303030;
+	text-decoration: none;
+	display: block;
+	padding: 22.5px;
+	border-radius: 10px;
+}
+.ba-menu a:hover {
+	background-color: #e10011;
+	color: #FFF;
+}
+
+.ba-intro {
+	background: radial-gradient(closest-side at 68% 50%, #fff, #eee);
+	padding-right: 110px;
+	margin-bottom: 185px;
+}
+.ba-promo {
+	width: 615px;
+	text-align: right;
+	font: 24px/1.5 'Roboto', sans-serif;
+}
+.ba-promo__heading {
+	font: 900 150px/1 'Raleway', sans-serif;
+	text-transform: uppercase;
+	margin: 0;
+}
+.ba-promo__text {
+	font: 300 24px/1.5 'Roboto', sans-serif;
+}
+.ba-promo__view {
+	text-decoration: none;
+	color: #E10011;
+	font-weight: 700;
+}
+.ba-promo__view:hover {
+	color: #000;
+}
+.ba-featured {
+	background: #FFF;
+	padding: 0 72px 72px;
+}
+.ba-featured__headline {
+	text-align: center;
+	padding: 60px 237px;
+}
+.ba-featured__title {
+	font-size: 48px;
+	font-weight: 900;
+	margin: 40px 0 0 0;
+}
+.ba-featured__descr {
+	margin: 5px 0;
+}
+
+.ba-box {
+	position: relative;
+	overflow: hidden;
+}
+.ba-box_big {
+	height: 387px;
+	width: 692px;
+}
+.ba-box_small {
+	height: 387px;
+	width: 328px;
+}
+.ba-box img {
+	display: block;
+}
+
+.ba-box_hovered {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: -387px;
+	background: #e10011;
+	border-radius: 5px;
+	padding: 37px;
+	transition: all .3s ease-in-out;
+}
+.ba-box_hovered > p {
+	position: absolute;
+	bottom: 37px;
+	left: 37px;
+	margin: 0;
+	font: 900 30px 'Roboto', sans-serif;
+	color: #FFF;
+}
+.ba-box_hovered:after {
+	content: "";
+	display: block;
+	width: 92px;
+	height: 5px;
+	background: #FFF;
+	position: absolute;
+	left: 37px;
+	bottom: 22px;
+}
+.ba-box:hover .ba-box_hovered {
+	top: 0;
+}
