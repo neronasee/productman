@@ -160,18 +160,18 @@ textarea {
 	width: 100%;
 }
 
-.ba-box_hovered {
+.ba-box__mask {
 	width: 100%;
 	height: 100%;
 	position: absolute;
-	transform: translateY(-100%);
+	transform: translateY(-101%);
 	top: 0;
 	left: 0;
 	background: #e10011;
 	padding: 37px;
 	transition: all .3s ease-in-out;
 }
-.ba-box_hovered > h3 {
+.ba-box__mask > h3 {
 	position: absolute;
 	bottom: 60px;
 	left: 37px;
@@ -179,7 +179,7 @@ textarea {
 	font: 900 30px 'Roboto', sans-serif;
 	color: #FFF;
 }
-.ba-box_hovered:after {
+.ba-box__mask:after {
 	content: "";
 	width: 92px;
 	height: 5px;
@@ -188,7 +188,7 @@ textarea {
 	left: 37px;
 	bottom: 42px;
 }
-.ba-box:hover .ba-box_hovered {
+.ba-box:hover .ba-box__mask {
 	transform: translateY(0);
 }
 
