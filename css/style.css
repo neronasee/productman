@@ -205,7 +205,6 @@ textarea {
 	top: 0;
 	left: 0;
 	background: #e10011;
-	padding: 37px;
 	transition: all .3s ease-in-out;
 }
 .ba-box__mask > h3 {
@@ -234,6 +233,15 @@ textarea {
 	}
 	.ba-grid + .ba-grid {
 		margin-top: 0;
+	}
+	.ba-box__mask > h3 {
+		bottom: 30px;
+		left: 20px;
+		font-size: 25px;
+	}
+	.ba-box__mask:after {
+		left: 20px;
+		bottom: 22px;
 	}
 }
 
